@@ -1,0 +1,262 @@
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Caslon Display', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f8f6;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header.shrink {
+    padding: 0.5rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.8rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+}
+
+/* Hamburger Styles */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Уменьшен разрыв между линиями */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+.hamburger span {
+    width: 20px; /* Уменьшена ширина */
+    height: 2px; /* Уменьшена высота */
+    background-color: #13513a; /* Зеленый цвет */
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color:#d6e2e0;
+    color: #13513a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.5s ease;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.menu-content {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-content li {
+    margin: 20px 0;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #13513a;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu-link.active {
+    font-weight: bold;
+    color: #13513a; /* Цвет выделенной ссылки */
+    border-bottom: 2px solid #13513a; /* Подчеркивание для активной ссылки */
+}
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('pics/hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-family: 'Pinyon Script', cursive;
+    margin-bottom: 0.5rem; /* Сокращаем отступ после заголовка */
+    line-height: 1.2; /* Уменьшаем межстрочный интервал */
+    font-weight: lighter;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem; /* Размер шрифта для подзаголовка */
+    line-height: 1.5; /* Межстрочный интервал для подзаголовка */
+    margin-top: 0; /* Убираем верхний отступ */
+}
+
+.about-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f8f6;
+}
+
+.about-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 550;
+}
+
+/* Photo Row Styles */
+.photo-row-section {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4; /* Нежный фон для контраста */
+    text-align: center;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-around; /* Распределяет фото равномерно */
+    gap: 10px;
+}
+
+.photo-row img {
+    width: 30%; /* Размер каждой фотографии */
+    height: auto;
+}
+
+.content-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.content-section img {
+    margin-top: 1rem;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #f9f8f6;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .about-section,
+    .content-section {
+        padding: 2rem 1rem; /* Уменьшены отступы */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about-text,
+    .content-section h2 {
+        font-size: 1.1rem; /* Уменьшен шрифт */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
