@@ -1,0 +1,463 @@
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Caslon Display', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f8f6;
+}
+
+a { 
+    text-decoration: none; 
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 1.5rem 1.5rem; /* По умолчанию широкий хедер */
+}
+
+header.shrink {
+    padding: 0.5rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.8rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+}
+
+.logo-link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет текста */
+}
+
+.logo-link .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-link .logo h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.8rem;
+}
+
+.logo-link .logo-img {
+    width: 40px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-link .logo h1 {
+        font-size: 1.2rem; /* Уменьшаем размер заголовка на мобильных устройствах */
+    }
+
+    .logo-link .logo-img {
+        width: 30px; /* Уменьшаем размер логотипа на мобильных устройствах */
+    }
+}
+
+
+/* Hamburger Styles */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+.hamburger span {
+    width: 20px;
+    height: 2px;
+    background-color: #13513a;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: #d6e2e0;
+    color: #13513a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.5s ease;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.menu-content {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-content li {
+    margin: 20px 0;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #13513a;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu-link.active {
+    border-bottom: 2px solid #13513a;
+}
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('pics/hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-family: 'Pinyon Script', cursive;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.about-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f8f6;
+}
+
+.about-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 550;
+}
+
+/* Photo Row Styles */
+.photo-row-section {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.photo-row img {
+    width: 30%;
+    height: auto;
+}
+
+/* Content Section */
+.content-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.content-section img {
+    margin-top: 1rem;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tennis Section Styles */
+.tennis-section {
+    padding: 4rem 2rem;
+    background-color: #f9f8f6; 
+}
+
+.tennis-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tennis-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    gap: 2rem;
+    flex: 1 1 calc(33.333% - 2rem); /* Устанавливаем такую же ширину, как у .gallery-item */
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Чтобы текст не выходил за границы */
+    transition: transform 0.3s ease;
+}
+
+.tennis-image {
+    width: 40%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.tennis-text {
+    width: 60%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.tennis-text h3 {
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.tennis-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tennis-content:hover {
+    transform: scale(1.05);
+}
+
+.tennis-content:hover .tennis-image {
+    opacity: 0.7; /* Сделать изображение прозрачным при наведении */
+}
+
+/* Gallery Section Styles */
+.gallery-section {
+    padding: 2rem 0;
+    background-color: #f9f8f6;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 2rem);
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item .gallery-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.gallery-item:hover .gallery-text {
+    opacity: 1;
+}
+
+.gallery-item:hover img {
+    opacity: 0.7;
+}
+
+.gallery-item p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #f9f8f6;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .about-section,
+    .content-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-text,
+    .content-section h2 {
+        font-size: 1.1rem;
+    }
+
+    /* Responsive Design продолжение */
+
+    
+    .tennis-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; /* Уменьшаем разрыв между текстом и картинкой на мобильных */
+    }
+
+    .tennis-image,
+    .tennis-text {
+        width: 100%;
+    }
+    
+    .gallery-item {
+        flex: 1 1 calc(50% - 2rem); 
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .tennis-content {
+        gap: 1rem; /* Еще меньше разрыв на самых маленьких экранах */
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #f9f8f6;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
