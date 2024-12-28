@@ -1,48 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elite Tennis Club</title>
-        <!-- Подключение favicon -->
-        <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    
-        <header id="main-header">
-            <nav class="navigation">
-                <div class="logo">
-                    <img src="pics/logo.png" alt="Logo" class="logo-img">
-                    <h1>Elite Tennis Club</h1>
-                </div>
-                <!-- Меню -->
-                <div id="mobile-menu" class="mobile-menu">
-                    <ul class="menu-content">
-                        <li><a href="index.html" class="menu-link">Home</a></li>
-                        <li><a href="tennis.html" class="menu-link">Tennis. What is it?</a></li>
-                        <li><a href="history.html" class="menu-link">History</a></li>
-                        <li><a href="rules.html" class="menu-link active">Rules</a></li>
-                        <li><a href="surfaces.html" class="menu-link">Court Surfaces</a></li>
-                        <li><a href="phisiology.html" class="menu-link">Physiology of Tennis</a></li>
-                        <li><a href="equipment.html" class="menu-link">Equipment</a></li>
-                        <li><a href="tournaments.html" class="menu-link">Tournaments. Ranking. Calendar</a></li>
-                    </ul>
-                </div>
-                <!-- Гамбургер -->
-                <button id="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Tennis Club</title>
+    <!-- Подключение favicon -->
+    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header id="main-header">
+        <nav class="navigation">
+            <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="pics/logo.png" alt="Logo" class="logo-img">
+                <h1>Elite Tennis Club</h1>
+            </div>
+            </a>
+            <!-- Меню -->
+            <div id="mobile-menu" class="mobile-menu">
+                <ul class="menu-content">
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="tennis.html" class="menu-link">Tennis. What is it?</a></li>
+                    <li><a href="history.html" class="menu-link">History of Tennis Fashion</a></li>
+                    <li><a href="rules.html" class="menu-link active">Rules</a></li>
+                    <li><a href="surfaces.html" class="menu-link">Court Surfaces</a></li>
+                    <li><a href="physiology.html" class="menu-link">Physiology of Tennis</a></li>
+                    <li><a href="equipment.html" class="menu-link">Equipment</a></li>
+                    <li><a href="tournaments.html" class="menu-link">Tournaments. Ranking. Calendar</a></li>
+                </ul>
+            </div>
+            <!-- Гамбургер -->
+            <button id="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+        <!-- Страница Rules --> 
+         <section class="hero-section rules-hero"> 
+            <div class="hero-content"> 
+                <h1 class="hero-title">Rules of Tennis</h1> 
+                <p class="hero-subtitle">Learn the rules of the game.</p> 
+            </div> 
+        </section>
+
+        <!-- About Section -->
+<section class="about-section">
+    <div class="about-content">
+        <img src="pics/logo.png" alt="Elite Tennis Club Logo" class="about-logo">
+        <p class="about-text">
+            In this article I will explain all the tennis 
+            rules in as much detail as possible. After reading, you'll be ready 
+            to step onto the court and play a match with any player. I can’t 
+            guarantee you’ll win, but you’ll definitely understand the rules, 
+            Let’s dive in!
+        </p>
+        <p class="about-text">First, let’s figure out what a tennis 
+            court looks like and the purpose of each line on it.</p>
+    </div>
+</section>
+
+    <!-- Content Section -->
     <section class="content-section">
-        <h2>History & Legacy of Tennis</h2>
-        <p>The rich history of tennis dates back to the 12th century in France...</p>
-        <img src="pics/history-image.jpg" alt="Historical Tennis Image">
+        <div class="content-container">
+            <img src="pics/tennis-quote.jpg" alt="Tennis Quote" class="content-image">
+            <h2>Tennis Court</h2>
+
+            <p>A standard tennis court is a rectangle measuring 23.77 meters in length 
+                and 8.23 meters in width for singles matches (one-on-one). 
+                For doubles matches (two-on-two), the width of the court is 10.97 meters.</p>
+            <p>The height of the net at the center of the court must always be 
+                91.4 cm, with a maximum allowable deviation of 1.5 mm.</p>
+            <p>A tennis court consists of the baseline, sidelines, service lines, 
+                corridors, and the 10-centimeter center mark.</p>
+            <img src="pics/tennis-court1.jpg" alt="Tennis Court Dimensions" class="content-image">
+
+            <h3>Court Layout</h3>
+            <p>The baseline and sidelines define the boundaries of the court 
+                for singles matches. Anything beyond these lines is out.</p>
+            <p>The baseline and corridors define the boundaries of the court 
+                for doubles matches. Anything beyond these lines is out.</p>
+            <p>The service lines are the same for both singles and doubles 
+                and form two service boxes (“deuce court” and “advantage court”).</p>
+            <p>The 10-centimeter center mark divides the baseline into two equal parts 
+                and runs parallel to the sidelines.</p>
+
+            <h2>Scoring System</h2>
+            <p>A tennis match consists of sets, sets consist of games, 
+                and games consist of points. The scoring system is as follows:</p>
+            <ul>
+                <li>The first point won — 15:0.</li>
+                <li>The second point won — 30:0.</li>
+                <li>The third point won — 40:0.</li>
+                <li>The fourth point won — game.</li>
+            </ul>
+            <p>If both players have won three points each, the score becomes “deuce.” 
+                From this point, a player must win two consecutive points to win the game. 
+                The first point provides an “advantage,” and the second secures the game. 
+                If a player gains an advantage but then loses the next point, the score 
+                returns to “deuce,” and the fight for the game continues.</p>
+
+            <h3>Winning a Set</h3>
+            <p>To win a set, a player must win six games before their opponent. 
+                However, if the score in the set reaches 5:5, two additional games are played. 
+                If one player wins these two games consecutively, the set is won 7:5. 
+                If the score becomes 6:6, a tiebreak is played.</p>
+
+            <h3>Tiebreak</h3>
+            <p>During a tiebreak, points are counted as 0, 1, 2, and so on. 
+                The first player to score 7 points wins the set, provided there is a margin 
+                of 2 points over the opponent (e.g., 7:5). If necessary, the tiebreak 
+                continues until this margin is achieved (e.g., 11:9). 
+                At Grand Slam tournaments, in the deciding set at 6:6, a “championship 
+                tiebreak” is played, which is similar to a regular tiebreak but extends 
+                to 10 points.</p>
+
+            <h3>Match Formats</h3>
+            <p>A tennis match can be played in a three-set format (winning two sets is 
+                required to win the match) or a five-set format (winning three sets is 
+                required to win the match). The five-set format is now used exclusively 
+                in men’s tennis and only at Grand Slam tournaments. In all other 
+                tournaments, both women and men compete in the three-set format.</p>
+            <img src="pics/5set.jpg" alt="Match Formats" class="content-image">
+
+            <p>
+                Now that we know what a tennis court looks like, the purpose of each 
+                line on it, and how the scoring in a match works, let's discuss the 
+                rules that are learned directly during the course of a match.</p>
+
+            <h2>Serving Rules</h2>
+            <p>Each game begins with a serve to the first service box, known as the 
+                “deuce court.” 
+                It is called the “deuce court” because, at deuce, 
+                the serve is always made to this box. 
+                The serve to the deuce court is made from the right side of the baseline 
+                diagonally into the first service box.</p>
+            <img src="pics/tennis-court2.jpg" alt="Serving Rules" class="content-image">
+            <p>The second point in each game begins with a serve to the second service box, known 
+                as the “advantage court.” It is called the “advantage court” because, when 
+                a player has the advantage, the serve is always made to this box. 
+                The serve to the advantage court is made from the left side of the baseline 
+                diagonally into the second service box.</p>
+            <img src="pics/tennis-court3.jpg" alt="Serving Rules" class="content-image">
+            <p>Serves must alternate between service boxes: 
+                first to the deuce court, then to the advantage court, and so on.</p>
+
+            <h3>Tiebreak Serving</h3>
+            <p>In a tiebreak, the server initially serves one point to the deuce court, 
+                then the serve switches to the opponent, who serves first to the advantage 
+                court, then to the deuce court. This alternation continues until the tiebreak ends.</p>
+
+            <h3>Server and Receiver Positions</h3>
+            <p>The server must stand with both feet behind the baseline and either 
+                to the right or left of the center mark, depending on the service box. 
+                The server must toss the ball in any direction and strike it with the 
+                racket before it touches the ground. The serve is considered complete 
+                when the racket either hits or misses the ball. A player who tosses 
+                the ball up but then decides not to hit it is allowed to catch the 
+                ball with their hand or racket or let it bounce, this is not considered a fault.</p>
+
+            <img src="pics/server-positions.jpg" alt="Server Positions" class="content-image">
+            <p>
+                The server always has two attempts to successfully serve the ball, 
+                known as the first serve and the second serve. If the first serve is a fault, 
+                the server must serve again without delay from the same side of the court 
+                where the fault occurred. If both serve attempts fail, the server loses 
+                the point, which is called a double fault.
+            </p>
+
+            <p>If, during the first or second serve, the ball touches the net and lands 
+                outside the service box, the serve is considered a fault. However, 
+                if the ball touches the net and lands inside the service box, the serve is 
+                replayed. Additionally, if the server steps over the baseline before hitting 
+                the ball during the first or second serve, it is also considered a fault.
+            </p>
+
+            <p>The receiver can position themselves anywhere on the court during the serve. 
+                The serve must be returned after the ball bounces. If the receiver returns 
+                the serve without letting the ball bounce, it is considered a fault, and 
+                they lose the point.</p>
+            <img src="pics/receiver-positions.jpg" alt="Receiver Positions" class="content-image">
+
+            <p>After each completed game, the receiver becomes the server, and the server 
+                becomes the receiver. If the receiver has a chance to win the opponent's 
+                serve in the next rally, this situation is called a breakpoint.</p>
+
+            <h2>Faults During Rally</h2>
+            <ul>
+                <li>Hitting the ball out of bounds.</li>
+                <li>Hitting the ball into the net.</li>
+                <li>Touching the net with the racket or any part of the body.</li>
+            </ul>
+            <img src="pics/faults-rally.jpg" alt="Faults During Rally" class="content-image">
+
+            <h2>Winning Plays During Rally</h2>
+            <ul>
+                <li>A service winner or ace (when the opponent cannot touch the ball on the serve).</li>
+                <li>A return winner (when the opponent cannot touch the ball after the return of serve).</li>
+                <li>A winner (when the opponent cannot touch the ball after a regular stroke).</li>
+                <li>A double bounce on the opponent’s side after your stroke.</li>
+                <li>During rallies, players cannot strike the ball on the opponent’s side of the court. 
+                    However, they may follow through with their racket across the net after 
+                    striking the ball from their side.</li>
+                <li>If the ball hits the net and lands on the opponent’s side during 
+                    a rally, the play continues.</li>
+                <li>If the ball touches a line, it is considered in play, regardless of whether 
+                    it hits the line from the inside or outside.</li>
+            </ul>
+            <img src="pics/hawk-eye.jpg" alt="Winning Plays During Rally" class="content-image">
+            
+            <h2>Changing Sides and Transitions</h2> 
+            <p>Players must change sides at the end of the first, third, 
+                and every subsequent odd-numbered game of each set. 
+                Players also change sides at the end of each set, unless 
+                the total number of games in that set is odd. In that case, 
+                players change sides at the end of the first game of the next set.</p> 
+                <p>During a tiebreak, players change sides after every six points.</p> 
+                <p>Transitions after the first games of a set and during a tiebreak 
+                    occur without rest. Transitions after the third and subsequent 
+                    odd-numbered games include a 90-second rest period. The break between 
+                    sets lasts 120 seconds.</p> 
+            <img src="pics/changing-sides.jpg" alt="Changing Sides" class="content-image">
+        </div>
     </section>
 
     <footer>

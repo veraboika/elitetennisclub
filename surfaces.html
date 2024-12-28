@@ -1,50 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elite Tennis Club</title>
-        <!-- Подключение favicon -->
-        <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    
-        <header id="main-header">
-            <nav class="navigation">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Tennis Club</title>
+    <!-- Подключение favicon -->
+    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="navigation">
+            <a href="index.html" class="logo-link">
                 <div class="logo">
                     <img src="pics/logo.png" alt="Logo" class="logo-img">
                     <h1>Elite Tennis Club</h1>
                 </div>
-                <!-- Меню -->
-                <div id="mobile-menu" class="mobile-menu">
-                    <ul class="menu-content">
-                        <li><a href="index.html" class="menu-link">Home</a></li>
-                        <li><a href="tennis.html" class="menu-link">Tennis. What is it?</a></li>
-                        <li><a href="history.html" class="menu-link">History</a></li>
-                        <li><a href="rules.html" class="menu-link">Rules</a></li>
-                        <li><a href="surfaces.html" class="menu-link active">Court Surfaces</a></li>
-                        <li><a href="phisiology.html" class="menu-link">Physiology of Tennis</a></li>
-                        <li><a href="equipment.html" class="menu-link">Equipment</a></li>
-                        <li><a href="tournaments.html" class="menu-link">Tournaments. Ranking. Calendar</a></li>
-                    </ul>
-                </div>
-                <!-- Гамбургер -->
-                <button id="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </header>
+            </a>
+            <!-- Меню -->
+            <div id="mobile-menu" class="mobile-menu">
+                <ul class="menu-content">
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="tennis.html" class="menu-link">Tennis. What is it?</a></li>
+                    <li><a href="history.html" class="menu-link">History of Tennis Fashion</a></li>
+                    <li><a href="rules.html" class="menu-link">Rules</a></li>
+                    <li><a href="surfaces.html" class="menu-link active">Court Surfaces</a></li>
+                    <li><a href="physiology.html" class="menu-link">Physiology of Tennis</a></li>
+                    <li><a href="equipment.html" class="menu-link">Equipment</a></li>
+                    <li><a href="tournaments.html" class="menu-link">Tournaments. Ranking. Calendar</a></li>
+                </ul>
+            </div>
+            <!-- Гамбургер -->
+            <button id="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
-    <section class="content-section">
-        <h2>History & Legacy of Tennis</h2>
-        <p>The rich history of tennis dates back to the 12th century in France...</p>
-        <img src="pics/history-image.jpg" alt="Historical Tennis Image">
+    <!-- Hero Section -->
+    <section class="hero-section court-surfaces-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">The Three Elements of Tennis: 
+                Grass, Clay, and Hard Courts</h1>
+            <p class="hero-subtitle">Discover the unique characteristics of each tennis surface.</p>
+        </div>
     </section>
 
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <img src="pics/logo.png" alt="Elite Tennis Club Logo" class="about-logo">
+            <p class="about-text">
+                Tennis is more than just rackets, balls, and battles of character. 
+                It's also about three unique surfaces—grass, clay, and hard courts—each 
+                shaping its own style of play. But what are their differences? Why do 
+                some players become kings of grass, others legends of clay, and still 
+                others dominate on hard courts? Let’s dive in.
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Grass: The Aristocracy of Tennis</h2>
+            <ul>
+                <li><strong>The first tennis surface in history.</strong></li>
+                <li><strong>Birthplace:</strong> England, late 19th century.</li>
+                <li><strong>Materials:</strong> Grass types and grains.</li>
+                <li><strong>Strengths:</strong> Beauty and aesthetics.</li>
+                <li><strong>Weaknesses:</strong> Too expensive to produce and maintain, weather-dependent.</li>
+                <li><strong>Season:</strong> June–July, Europe.</li>
+                <li><strong>Number of tournaments:</strong> 15.</li>
+                <li><strong>Main tournament:</strong> Wimbledon, England.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="photo-row-section">
+        <div class="photo-row">
+            <img src="pics/1.jpg" alt="Wimbledon Logo" >
+            <img src="pics/2.jpg" alt="Wimbledon Logo" >
+            <img src="pics/3.jpg" alt="Wimbledon Logo" >
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Clay: Rugged Tradition</h2>
+            <ul>
+                <li><strong>The second tennis surface in history.</strong></li>
+                <li><strong>Birthplace:</strong> Cannes, France, late 19th–early 20th century.</li>
+                <li><strong>Materials:</strong> Crushed bricks, a mix of clay and sand.</li>
+                <li><strong>Strengths:</strong> Affordable and easy to produce.</li>
+                <li><strong>Weaknesses:</strong> Stains clothing, requires meticulous maintenance, weather-sensitive.</li>
+                <li><strong>Season:</strong> February in Latin America, April–July in Europe.</li>
+                <li><strong>Number of tournaments:</strong> 31.</li>
+                <li><strong>Main tournament:</strong> Roland Garros, Paris, France.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="photo-row-section">
+        <div class="photo-row">
+            <img src="pics/4.jpg" alt="Wimbledon Logo">
+            <img src="pics/5.jpg" alt="Wimbledon Logo">
+            <img src="pics/6.jpg" alt="Wimbledon Logo">
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">    
+            <h2>Hard Courts: The Modern Standard</h2>
+            <ul>        
+                <li><strong>The most popular surface today.</strong></li>        
+                <li><strong>Birthplace:</strong> USA, 1970s.</li>        
+                <li><strong>Materials:</strong> Concrete, asphalt, acrylic coatings.</li>        
+                <li><strong>Strengths:</strong> Relatively inexpensive to produce, low-maintenance, 
+                    adjustable speed and color.</li>        
+                <li><strong>Weaknesses:</strong> High impact on joints, wears down shoes quickly.</li>        
+                <li><strong>Season:</strong> January in Australia, March–April in the USA, 
+                    August–November in North and South America, Europe, Asia.</li>        
+                <li><strong>Number of tournaments:</strong> 60.</li>        
+                <li><strong>Main tournaments:</strong> Australian Open, US Open.</li>    
+            </ul>
+        </div>
+    </section>
+
+    <section class="photo-row-section">
+        <div class="photo-row">
+            <img src="pics/7.jpg" alt="Wimbledon Logo">
+            <img src="pics/8.jpg" alt="Wimbledon Logo">
+            <img src="pics/9.jpg" alt="Wimbledon Logo">
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Differences in Gameplay on Surfaces</h2>
+            <p>Grass, clay, and hard courts differ fundamentally. 
+                To understand these differences, focus on one key moment: 
+                the split second when the ball contacts the court after a hit.</p>
+                <img src="pics/Bouncing-tennis-ball.jpg" alt="Bouncing Tennis Ball" class="content-image">
+
+            <h3>Grass Courts</h3>
+    <p>Approximately, when hitting the ball at a speed of 100 km/h and at an angle of 30°, the ball retains a speed of 73 km/h after the bounce and rebounds at an angle of 36°. Near the baseline, such a ball is played at a height of 134 cm. These characteristics make grass courts the fastest.</p>
+    <p>On these courts, it is crucial to have instant reactions, quick footwork, excellent flat and sliced shots, strong serves, and efficient net play. Most rallies end in one or two strokes. Players hit many aces and often approach the net.</p>
+    <p>On grass courts, there’s no time to prepare shots; responses must be immediate and always taken at a low point. In all these components, <strong>Roger Federer</strong> was unparalleled.</p>
+            <img src="pics/federer.jpg" alt="Roger Federer on Grass Court" class="content-image">
+            
+            <h3>Clay Courts</h3>
+    <p>When hitting the ball at a speed of 100 km/h and at an angle of 30°, the ball retains a speed of 57 km/h after the bounce and rebounds at an angle of 44°. Near the baseline, such a ball is played at a height of 170 cm. Based on these characteristics, we can confidently state that clay courts are the slowest.</p>
+    <p>To play on clay, endurance, tactical skills, and ball spin are critical. It’s precisely the spin that makes <strong>Rafael Nadal</strong> the King of Clay. Nadal spins the ball at a speed of 3,200 revolutions per minute, whereas others typically spin the ball in the range of 2,000 to 2,700 revolutions per minute. This allows him to achieve an explosive effect after the bounce, forcing the opponent to play it in a very uncomfortable, high position.</p>
+
+            <img src="pics/nadal.jpg" alt="Rafael Nadal on Clay Court" class="content-image">
+            
+            <h3>Hard Courts</h3>
+    <p>When hitting the ball at a speed of 100 km/h and at an angle of 30°, the ball retains a speed of 67 km/h after the bounce and rebounds at an angle of 41°. Near the baseline, such a ball is played at a height of 162 cm.</p>
+    <p>Finally, we arrive at the average characteristics of hard courts: faster than clay but slower than grass. Here, it’s essential to incorporate the best of both grass and clay gameplay, as most tournaments are played on hard courts. This surface is truly universal but also the most demanding.</p>
+    <p>Due to the firm grip of the surface, the knees, joints, and back experience significant strain. Without a doubt, <strong>Novak Djokovic</strong> is the King of Hard Courts. His ability to move on hard surfaces, thanks to his flexibility and agility, is unmatched.</p>
+            <img src="pics/djokovich.jpg" alt="Novak Djokovic on Hard Court" class="content-image">
+            
+            <h2>How Does Weather Affect Surfaces?</h2>
+            <p>The dynamics of tennis surfaces are fascinating, but they become even more intriguing when we consider how weather conditions can alter them.</p>
+            <p><strong>Grass</strong> is highly sensitive during growth. If the weather is humid during this period, the grass becomes lush and slippery. In contrast, during hot weather, the grass wears out more quickly and, as a result, becomes faster.</p>
+            <p><strong>Clay</strong> performs differently based on air humidity. It plays faster in dry conditions compared to when the air is moist. Additionally, clay is quicker at higher altitudes, such as in Madrid, where the thinner air affects play. This is one reason why Rafael Nadal has won fewer titles at this specific clay tournament.</p>
+            <p><strong>Hard courts</strong> vary throughout the day. They are faster in the morning under the sun but tend to slow down by evening.</p>
+            <img src="pics/differences.jpg" alt="Different Surfaces" class="content-image">
+
+            <h2>Why Are There No Kings of All Surfaces?</h2>
+            <p>The answer is simple: it’s physically very challenging. 
+                Only a few players can truly be called versatile. <strong>Federer, Nadal, Djokovic, and 
+                    Serena Williams</strong> come to mind. But why only them? Why is it so difficult 
+                    to excel equally on all three surfaces?</p>
+                    <img src="pics/serena-williams.jpg" alt="Serena Williams" class="content-image">
+    <p>Young players relentlessly strive to conquer all three tennis domains—three different styles 
+        of play, three different aesthetics: grass, clay, and hard. Perhaps someone will achieve 
+        this soon. One way or another, it is precisely because of these surfaces that tennis 
+        is so diverse and captivating.</p>
+        </div>
+    </section>    
+
+    <!-- Остальной контент следует тому же принципу -->
     <footer>
         <p>© 2025 Elite Tennis Club | Designed with elegance</p>
     </footer>

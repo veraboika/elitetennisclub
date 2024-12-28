@@ -1,49 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elite Tennis Club</title>
-        <!-- Подключение favicon -->
-        <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    
-        <header id="main-header">
-            <nav class="navigation">
-                <div class="logo">
-                    <img src="pics/logo.png" alt="Logo" class="logo-img">
-                    <h1>Elite Tennis Club</h1>
-                </div>
-                <!-- Меню -->
-                <div id="mobile-menu" class="mobile-menu">
-                    <ul class="menu-content">
-                        <li><a href="index.html" class="menu-link">Home</a></li>
-                        <li><a href="tennis.html" class="menu-link active">Tennis. What is it?</a></li>
-                        <li><a href="history.html" class="menu-link">History</a></li>
-                        <li><a href="rules.html" class="menu-link">Rules</a></li>
-                        <li><a href="surfaces.html" class="menu-link">Court Surfaces</a></li>
-                        <li><a href="phisiology.html" class="menu-link">Physiology of Tennis</a></li>
-                        <li><a href="equipment.html" class="menu-link">Equipment</a></li>
-                        <li><a href="tournaments.html" class="menu-link">Tournaments. Ranking. Calendar</a></li>
-                    </ul>
-                </div>
-                <!-- Гамбургер -->
-                <button id="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Tennis Club</title>
+    <!-- Подключение favicon -->
+    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <section class="content-section">
-        <h2>History & Legacy of Tennis</h2>
-        <p>The rich history of tennis dates back to the 12th century in France...</p>
-        <img src="pics/history-image.jpg" alt="Historical Tennis Image">
+    <header id="main-header">
+        <nav class="navigation">
+            <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="pics/logo.png" alt="Logo" class="logo-img">
+                <h1>Elite Tennis Club</h1>
+            </div>
+            </a>
+            <!-- Меню -->
+            <div id="mobile-menu" class="mobile-menu">
+                <ul class="menu-content">
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="tennis.html" class="menu-link active">Tennis. What is it?</a></li>
+                    <li><a href="history.html" class="menu-link">History of Tennis Fashion</a></li>
+                    <li><a href="rules.html" class="menu-link">Rules</a></li>
+                    <li><a href="surfaces.html" class="menu-link">Court Surfaces</a></li>
+                    <li><a href="physiology.html" class="menu-link">Physiology of Tennis</a></li>
+                    <li><a href="equipment.html" class="menu-link">Equipment</a></li>
+                    <li><a href="tournaments.html" class="menu-link">Tournaments. Ranking. Calendar</a></li>
+                </ul>
+            </div>
+            <!-- Гамбургер -->
+            <button id="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+        <!-- Hero Section -->
+        <section class="hero-section tennis-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Tennis: From Its Origins to the Modern Era</h1>
+                <p class="hero-subtitle">Explore the rich history and evolution of tennis.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <img src="pics/logo.png" alt="Elite Tennis Club Logo" class="about-logo">
+                <p class="about-text">Foot to ball: football. Basket to ball: basketball. 
+                    Volley to ball: volleyball. Hand to ball: handball. 
+                    Racket to ball: tennis. Wait a second — what went wrong? 
+                    And then there’s this:</p>
+                <p class="about-text">15–0, 30–0, 40–0, and then 1–0.</p>    
+                <p class="about-text">It may seem that tennis is one of the most illogical and 
+                    incomprehensible sports. And, truthfully, it is — but there’s an 
+                    explanation for everything. The history of tennis holds the 
+                    answers.</p>
+        </div>
     </section>
+    
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="content-container">
+                
+    
+                <h2>Jeu de Paume</h2>
+                <p>The earliest traces of tennis date back to antiquity, though this 
+                    isn’t certain. So let’s begin our journey to understand this game 
+                    in the XII century. At this time in France, monarchs invented and 
+                    began playing a game called <em>jeu de paume</em>, which translates 
+                    to “palm game”. The daring French played with a wooden ball. 
+                    Painful? Definitely — but they soon realized it too, inventing a 
+                    special glove, then a contraption resembling a racket, and later, 
+                    a ball made from cellulose for greater maneuverability.</p>
+                <img src="pics/jeu-de-paume.jpg" alt="Jeu de Paume" class="content-image">
+    
+                
+                <p>Before the XIII century, <em>jeu de paume</em> didn’t lead to 
+                    fatalities. However, in 1316, King Louis X became the first to die 
+                    after playing it. This didn’t dampen the game’s popularity. On the 
+                    contrary, <em>jeu de paume</em> became even more famous, spreading 
+                    across Europe during the XIV century to royal courts and monasteries 
+                    alike, despite the Catholic Church’s bans.</p>
+                <img src="pics/tennis-history.jpg" alt="History of Tennis" class="content-image">
+    
+                <h3>The Transformation to Tennis</h3>
+                <p>Around this time, the world first heard a word resembling “tennis”. During 
+                    games, French players would shout “tenez”, meaning “hold”. This 
+                    exclamation served as a warning before serving the ball. This marked the 
+                    beginning of the transformation of <em>jeu de paume</em> into “real tennis”, 
+                    also known as “royal tennis” or “court tennis.”</p>
+                <p>In the 1530s, King Henry VIII built a tennis court at Hampton Court Palace, 
+                    and in Italy in 1583, the first prototype of the modern tennis racket 
+                    appeared. Over the next few centuries, “real tennis” became the pastime of 
+                    royal families and aristocrats.</p>
+    
+                <h2>The Birth of the Modern Scoring System</h2>
+                <p>This period also birthed the famously illogical scoring system. In football, 
+                    a goal always equals one point. In basketball, free throws are worth one 
+                    point, field goals inside the three-point line are worth two, and shots 
+                    beyond it are worth three.</p>
+                <p>But what’s with tennis scoring? Why is it so strange? 
+                    There are four theories, but let’s focus on the two most plausible ones.</p>
+                <h3>The Clock Face Theory</h3>
+                    <p>Early scoreboards used clock 
+                        dials, with the hands moving for each point: first to 15, then 30, then 
+                        45. Eventually, 45 became 40 for simplicity in reflecting deuce (40 – 40). 
+                        When a player had the advantage, the hand moved to 50, and with the 
+                        game’s conclusion, it returned to the top — 60.</p>
+                
+                <img src="pics/scoring-system.jpg" alt="Scoring System" class="content-image">
+                  
+                <h3>The Court Size Theory</h3>
+                <p>The traditional court size of 
+                        <em>jeu de paume</em> was 90 feet (27 meters) long, divided by a net 
+                        into two equal sections of 45 feet (about 14 meters) each. Each point 
+                        allowed the server to move 15 feet forward, then another 15, and 
+                        finally 10 more feet closer to the net, where they often secured 
+                        the point and won the game.</p>
+                
+                <p>Neither theory can be definitively proven, so you’re free to choose the 
+                    one you prefer.</p>
+    
+                <h2>The Use of “Love” Instead of “Zero”</h2>
+                <p>The quirks of scoring don’t stop there. What about the use of “love” 
+                    instead of “zero”?</p>
+                <ul>
+                    <li>The most common explanation is that the term comes from the French 
+                        word <em>œuf</em>, meaning “egg”. Since an egg resembles the number 
+                        zero, it became “love.”</li>
+                    <li>Another theory traces it to the Dutch word <em>lof</em>, meaning 
+                        “honor” or “virtue.”</li>
+                    <li>A third version suggests that before the game begins, players have 
+                        love and respect for one another.</li>
+                    <li>A fourth theory similarly posits that a player with zero points 
+                        still retains a love for the game.</li>
+                </ul>
+                <img src="pics/love-tennis.jpg" alt="Love in Tennis" class="content-image">
+    
+                <h2>The Emergence of Modern Tennis</h2>
+                <p>With that dive into the history of tennis and its peculiar scoring, 
+                    it’s time to learn how modern tennis came to be.</p>
+                <p>In the mid-19th century, as the popularity of “real tennis” waned, 
+                    British Army Major Walter Wingfield stepped in. He combined the rules 
+                    and equipment of earlier tennis games into a boxed set. Wingfield 
+                    marketed it to wealthy Victorians, who embraced it on their manicured 
+                    lawns, which were otherwise rarely used beyond casual strolls.</p>
+                <p>He called his invention <em>sphairistike</em>, from the Greek word for 
+                    a ball game. While the name didn’t stick, his explanation of “lawn tennis” did. 
+                    The impact was remarkable. </p>
+                <img src="pics/walter-wingfield.jpg" alt="Walter Wingfield" class="content-image">
+    
+                <h2>The Growth of Tennis</h2>
+                <p>By 1877, the first Wimbledon tournament was held. 
+                    In 1881 came the first U.S. Championship, followed by the French 
+                    Championship in 1891 and the Australian Championship in 1905.</p>
+                <p>Forty years after Wingfield sold his sets, tennis was thriving in 
+                    over 20 countries, with Grand Slam tournaments and the Davis Cup 
+                    well established.</p>
+                <img src="pics/tennis-growth.jpg" alt="Growth of Tennis" class="content-image">
+    
+                <h3>Post-War Tennis and Challenges</h3>
+                <p>After World War I, tennis flourished, thanks to charismatic stars 
+                    like Bill Tilden, Suzanne Lenglen, René Lacoste, Fred Perry, and 
+                    others.</p>
+                <p>Yet, challenges arose. Tennis traditionalists viewed the sport 
+                    as strictly amateur, while top players sought to earn a living, 
+                    often turning professional. This divided the tennis world into 
+                    amateurs competing in traditional tournaments and former champions 
+                    showcasing their skills in paid exhibitions.</p>
+                <img src="pics/post-war-tennis.jpg" alt="Post-War Tennis" class="content-image">
+    
+                <h2>The Open Era</h2>
+                <p>In 1967, everything changed when Wimbledon, the bastion of tradition, 
+                    declared: <em>“If we want to honor the best players in the world, we must 
+                    let them play in the most prestigious tournaments.”</em></p>
+                <p>Thus began the Open Era of tennis. Within months, amateur and 
+                    professional tours merged.</p>
+                <p>The first Grand Slam tournament of the Open Era, held in Paris in 
+                    1968, heralded a tennis boom.</p>
+                <p>Grass and clay courts were soon joined by carpet and synthetic 
+                    surfaces. Traditional white attire gave way to colorful clothing, 
+                    while advancements in technology and materials left wooden rackets 
+                    behind.</p>
+                <img src="pics/tennis-evolution.jpg" alt="Tennis Evolution" class="content-image">
+    
+                <p>A new generation of superstars—Billie Jean King, Arthur Ashe, 
+                    Chris Evert, Jimmy Connors, Björn Borg, Martina Navratilova, 
+                    John McEnroe—introduced tennis to fresh audiences.</p>
+                <p>In 1972, men formed the Association of Tennis Professionals (ATP), 
+                    while women, led by Billie Jean King, established the Women’s Tennis 
+                    Association (WTA), proving they played as skillfully as men.</p>
+                <p>King’s victory over Bobby Riggs in the “Battle of the Sexes” cemented 
+                    tennis’s modern evolution.</p>
+                <img src="pics/modern-superstars.jpg" alt="Modern Superstars" class="content-image">
+    
+                <h3>The Modern Era of Tennis</h3>
+                <p>Television coverage expanded. Courts gained retractable roofs, 
+                    and player conduct became less tied to old traditions.</p>
+                <p>Advances in racket technology, nutrition, and training elevated 
+                    professional tennis to new heights.</p>
+                <p>Today, men and women compete for equal prize money in major 
+                    tournaments, and electronic line-calling enhances the game’s 
+                    precision and excitement for fans.</p>
+                <p>Tennis, like the rest of us, endured the pandemic, with matches 
+                    played in empty arenas as millions watched from home.</p>
+                <img src="pics/modern-tennis.jpg" alt="Modern Tennis" class="content-image">
+    
+                <p>In recent years, the sport has been blessed with an extraordinary 
+                    generation of players led by Roger Federer, Rafael Nadal, Novak 
+                    Djokovic, Venus and Serena Williams, and many others.</p>
+                <p>Together, they’ve made tennis one of the most popular sports worldwide.</p>
+                <p>Yet, despite its rapid progress, tennis remains rooted in tradition. 
+                    Players, as they did 150 years ago, show mutual respect: warming up on 
+                    opposite sides of the net, apologizing for net-cord shots, and shaking 
+                    hands after the final words: <em>“Game, set, match”</em>.</p>
+                <img src="pics/extraordinary-players.jpg" alt="Extraordinary Players" class="content-image">
+            </div>
+        </section>
 
     <footer>
         <p>© 2025 Elite Tennis Club | Designed with elegance</p>

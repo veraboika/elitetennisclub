@@ -1,50 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elite Tennis Club</title>
-        <!-- Подключение favicon -->
-        <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    
-        <header id="main-header">
-            <nav class="navigation">
-                <div class="logo">
-                    <img src="pics/logo.png" alt="Logo" class="logo-img">
-                    <h1>Elite Tennis Club</h1>
-                </div>
-                <!-- Меню -->
-                <div id="mobile-menu" class="mobile-menu">
-                    <ul class="menu-content">
-                        <li><a href="index.html" class="menu-link">Home</a></li>
-                        <li><a href="tennis.html" class="menu-link">Tennis. What is it?</a></li>
-                        <li><a href="history.html" class="menu-link">History</a></li>
-                        <li><a href="rules.html" class="menu-link">Rules</a></li>
-                        <li><a href="surfaces.html" class="menu-link">Court Surfaces</a></li>
-                        <li><a href="phisiology.html" class="menu-link">Physiology of Tennis</a></li>
-                        <li><a href="equipment.html" class="menu-link">Equipment</a></li>
-                        <li><a href="tournaments.html" class="menu-link active">Tournaments. Ranking. Calendar</a></li>
-                    </ul>
-                </div>
-                <!-- Гамбургер -->
-                <button id="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Tennis Club</title>
+    <!-- Подключение favicon -->
+    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <section class="content-section">
-        <h2>History & Legacy of Tennis</h2>
-        <p>The rich history of tennis dates back to the 12th century in France...</p>
-        <img src="pics/history-image.jpg" alt="Historical Tennis Image">
+    <header id="main-header">
+        <nav class="navigation">
+            <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="pics/logo.png" alt="Logo" class="logo-img">
+                <h1>Elite Tennis Club</h1>
+            </div>
+            </a>
+            <!-- Меню -->
+            <div id="mobile-menu" class="mobile-menu">
+                <ul class="menu-content">
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="tennis.html" class="menu-link">Tennis. What is it?</a></li>
+                    <li><a href="history.html" class="menu-link">History of Tennis Fashion</a></li>
+                    <li><a href="rules.html" class="menu-link">Rules</a></li>
+                    <li><a href="surfaces.html" class="menu-link">Court Surfaces</a></li>
+                    <li><a href="physiology.html" class="menu-link">Physiology of Tennis</a></li>
+                    <li><a href="equipment.html" class="menu-link">Equipment</a></li>
+                    <li><a href="tournaments.html" class="menu-link active">Tournaments. Ranking. Calendar</a></li>
+                </ul>
+            </div>
+            <!-- Гамбургер -->
+            <button id="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section tournaments-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Understanding Tennis:</h1>
+            <h1 class="hero-title">Tournaments, Rankings, and Calendar</h1>
+            <p class="hero-subtitle">A comprehensive guide for tennis enthusiasts.</p>
+        </div>
     </section>
 
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <img src="pics/logo.png" alt="Elite Tennis Club Logo" class="about-logo">
+            <p class="about-text">When someone starts watching tennis, they encounter completely 
+                unfamiliar terms: Grand Slam tournament, Futures, Challenger, 
+                ATP 500, ATP 250. Then it gets even more confusing with things 
+                happening in the rankings. For instance, if a player loses today, 
+                they could drop 10 positions, fail to defend a title, and fall 
+                out of the top 100. It’s also puzzling why tennis players get only 
+                four weeks of rest a year, and even then, they might not truly 
+                rest if they participate in exhibition tournaments.</p>
+            <p class="about-text">In general, anyone starting to watch tennis without prior knowledge 
+                is immediately faced with a mountain of inexplicable things. 
+                Let’s break everything down in detail and as thoroughly 
+                as possible.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Types of Tennis Tournaments</h2>
+            <p>First, let’s once and for all understand the types of tennis tournaments. 
+                Three major organizations are responsible for conducting tennis 
+                tournaments: the International Tennis Federation (ITF), the 
+                Association of Tennis Professionals (ATP), and the Women’s Tennis Association (WTA).</p>
+                <img src="pics/ItfAtpWta.jpg" alt="ITF-ATP-WTA" class="content-image">
+
+            <h3>International Tennis Federation (ITF)</h3>
+            <p>The ITF oversees both the entry-level and top-tier tournaments, 
+                as well as team competitions. Entry-level tournaments include 
+                all events marked as ITF World Tennis Tour. Top-tier tournaments 
+                include the four Grand Slam tournaments: Australian Open, Roland 
+                Garros, Wimbledon, and US Open. Team competitions include the 
+                Davis Cup for men and the Billie Jean King Cup for women, which 
+                was previously called the Federation Cup.</p>
+                <img src="pics/ITF.jpg" alt="ITF" class="content-image">
+
+            <h3>Association of Tennis Professionals (ATP)</h3>
+            <p>The ATP is responsible for organizing and conducting exclusively men’s 
+                tournaments, divided into five categories:</p>
+            <ul>
+                <li>ATP Challenger Tour or Challenger</li>
+                <li>ATP 250</li>
+                <li>ATP 500</li>
+                <li>ATP Masters 1000, or simply Masters</li>
+                <li>Nitto ATP Finals (also known as the year-end finals, held 
+                    at the end of the year for the top eight players who earned 
+                    the most points during the season).</li>
+            </ul>
+            <img src="pics/ATP.jpg" alt="ATP" class="content-image">
+
+            <h3>Women’s Tennis Association (WTA)</h3>
+            <p>The WTA organizes and conducts exclusively women’s tournaments, 
+                also divided into five categories:</p>
+            <ul>
+                <li>WTA 125</li>
+                <li>WTA 250</li>
+                <li>WTA 500</li>
+                <li>WTA 1000</li>
+                <li>WTA Finals</li>
+            </ul>
+            <img src="pics/WTA.jpg" alt="WTA" class="content-image">
+
+            <h2>Tennis Ranking System</h2>
+            <p>Next, let’s move on to the ranking system. The number in a tournament’s 
+                category represents the points the winner receives. The more points 
+                up for grabs at a tournament, the more prestigious it is. If we 
+                imagine tournament prestige in a pyramid format, it would look like 
+                this. Naturally, prize money at these tournaments also varies significantly.</p>
+                <img src="pics/tennis-ranking-system.jpg" alt="Tennis Ranking System" class="content-image">
+            <p>The tennis ranking is based on the total points a player has earned over 
+                the past 52 weeks and is updated almost every Monday. It is calculated 
+                based on the results of 18 tournaments for men and 16 tournaments for 
+                women. Players don’t have the option to freely choose all 18 or 16 tournaments 
+                for their rankings. The mandatory events include:</p>
+            <ul>
+                <li>All four Grand Slam tournaments</li>
+                <li>All Masters 1000 tournaments</li>
+                <li>Four ATP 500 tournaments</li>
+            </ul>
+            <p>The rest are at the player’s discretion. It’s also worth noting 
+                that the Monte Carlo Masters, despite being a Masters 1000 event, 
+                is not mandatory for men.</p>
+
+            <h2>Point Defense in Tennis Rankings</h2>
+            <p>However, the most interesting aspect of tennis rankings is point defense. 
+                For example, if someone won Wimbledon and earned 2,000 points but lost 
+                in the first round the following year, earning only 10 points, how would 
+                that affect their ranking? This would result in a loss of 1,990 points. 
+                Similarly, if they won again, they would “defend the title” and retain 
+                their 2,000 points. That’s why tennis commentators often mention how many 
+                points a player needs to “defend” during any given tournament.</p>
+
+            <h2>Tennis Calendar</h2>
+            <p>With tournaments and the ranking system covered, let’s now 
+                understand how the tennis calendar works.</p>
+            <p>The tennis calendar spans 48 weeks and has six key points on the map:</p>
+
+            
+
+            <h3>Australia</h3>
+            <p>This is where the tennis season begins. The United Cup and two weeks 
+                of tournaments in Adelaide help players adapt to the hot and humid 
+                climate before playing the first Grand Slam of the year — the Australian 
+                Open — in mid-January.</p>
+
+            <h3>USA</h3>
+            <p>After Australia, players gradually transition in February to prestigious 
+                tournaments in Dubai and Doha in the Middle East. Some compete in 
+                Latin America in Acapulco. By early March, they move to the USA, 
+                where the tennis world focuses on the so-called “Sunshine Double” — 
+                the Masters 1000 tournaments in Indian Wells and Miami.</p>
+
+            <h3>Europe (Clay)</h3>
+            <p>After three months of playing on hard courts, players move to Europe 
+                and begin the clay season. From April to May, the clay court season 
+                is dominated by Masters 1000 tournaments in Monte Carlo, Madrid, 
+                and Rome, culminating in the second Grand Slam of the year — Roland Garros.</p>
+
+            <h3>Europe (Grass)</h3>
+            <p>Immediately after the French Open, players face the technically 
+                challenging transition to grass courts. From June to July, on the 
+                green courts of Germany, the Netherlands, Spain, and England, the 
+                fastest tennis is played, with the highlight being the third 
+                Grand Slam of the year — Wimbledon.</p>
+
+            <h3>USA</h3>
+            <p>As the final Grand Slam approaches in August and September, players 
+                return to North America. They compete in two Masters 1000 tournaments 
+                in Canada and Cincinnati before battling for victory at the US Open in New York.</p>
+
+            <h3>Eurasia (Indoor Courts) and Latin America</h3>
+            <p>October and November often mark the final stretch of the race for the 
+                world’s top ranking. On indoor courts in Asia and Europe, players try 
+                to earn a few more points to secure a spot at the Year-End Finals among 
+                the top eight and compete for substantial prize money.</p>
+
+            <p>Some players end their season here, while others continue with events 
+                like the Davis Cup or exhibition matches. One way or another, tennis 
+                offers just four weeks of rest before it’s time to return to the court 
+                and embark on another global pursuit of points, titles, prize money, 
+                and new records.</p>
+                <img src="pics/2025calendar1.jpg" alt="Elite Tennis Club Logo" class="content-image">
+                <img src="pics/2025calendar2.jpg" alt="Elite Tennis Club Logo" class="content-image">
+                <img src="pics/2025calendarWTA.jpg" alt="Elite Tennis Club Logo" class="content-image">
+        </div>
+    </section>
+   
     <footer>
         <p>© 2025 Elite Tennis Club | Designed with elegance</p>
     </footer>
