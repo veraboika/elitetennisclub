@@ -229,7 +229,7 @@ header.shrink {
 
 .about-section { 
     text-align: center; 
-    padding: 3rem 2rem; /* Уменьшаем нижний отступ */ 
+    padding: 4rem; /* Уменьшаем нижний отступ */ 
     background-color: #f9f8f6; 
 }
 
@@ -252,7 +252,7 @@ header.shrink {
 
 /* Photo Row Styles */
 .photo-row-section {
-    padding: 1rem 2rem;
+    padding: 2rem;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -270,7 +270,7 @@ header.shrink {
 
 /* Content Section Styles */ 
 .content-section { 
-    padding: 1rem 2rem; /* Уменьшаем верхний отступ */ 
+    padding: 3rem 2rem; /* Уменьшаем верхний отступ */ 
     background-color: #f9f8f6; 
     text-align: left; 
 }
@@ -310,12 +310,11 @@ header.shrink {
 .content-image { 
     width: 100%; 
     height: auto; 
-    margin: 1rem 0; 
+    margin: 2rem 0; 
 }
 
 /* Tennis Section Styles */
 .tennis-section {
-    padding: 4rem 2rem;
     background-color: #f9f8f6; 
 }
 
@@ -452,19 +451,19 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Increased for better readability */
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.4rem; /* Increased for better readability */
     }
 
     .logo-link .logo h1 {
-        font-size: 1.2rem; /* Уменьшаем размер заголовка на мобильных устройствах */
+        font-size: 1.4rem; /* Increased for better readability */
     }
 
     .logo-link .logo-img {
-        width: 30px; /* Уменьшаем размер логотипа на мобильных устройствах */
+        width: 30px; /* Reduce logo size for mobile devices */
     }
 
     .menu {
@@ -489,24 +488,28 @@ footer {
     }
 
     .about-section,
-    .content-section {
-        padding: 2rem 1rem;
+    .content-section,
+    .tennis-section,
+    .tennis-text,
+    .hero-section {
+        padding: 1rem 2rem;
     }
 
-    .about-text,
-    .content-section h2{
-        font-size: 1.1rem;
+    .about-text {
+        font-size: 1.3rem; /* Increased for better readability */
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem; /* Increased for better readability */
     }
 
     .content-section p, 
     .content-section h3,
     .content-section li, 
     .tennis-text p { 
-        font-size: 1rem; 
+        font-size: 1.2rem; /* Increased for better readability */
     }
-    /* Responsive Design продолжение */
 
-    
     .tennis-content {
         flex-direction: column;
         align-items: center;
@@ -516,15 +519,14 @@ footer {
     .tennis-image,
     .tennis-text {
         width: 100%;
-        font-size: 1rem; 
     }
     
     .gallery-item {
         flex: 1 1 calc(50% - 2rem); 
     }
 
-    .gallery-text p{
-        font-size: 1.1rem;
+    .gallery-text p {
+        font-size: 1.3rem; /* Increased for better readability */
     }
 
     /* Добавляем класс для анимации */
@@ -537,22 +539,61 @@ footer {
     .animate .gallery-text { 
         opacity: 1; 
     }
+
+    .photo-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-row img {
+        width: 80%; /* Adjust width as needed */
+    }
+
+    .about-logo {
+        width: 40px; /* Reduce about logo size for mobile devices */
+    }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 2rem; /* Increased for better readability */
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem; /* Increased for better readability */
     }
     
     .tennis-content {
         gap: 1rem; /* Еще меньше разрыв на самых маленьких экранах */
     }
-}
 
+    .logo-link .logo h1 {
+        font-size: 1.2rem; /* Increased for better readability */
+    }
+
+    .logo-link .logo-img {
+        width: 15px; /* Reduce logo size for mobile devices */
+    }
+
+    .about-logo {
+        width: 30px; /* Further reduce about logo size for smaller mobile devices */
+    }
+
+    .about-text {
+        font-size: 1.2rem; /* Increased for better readability */
+    }
+
+    .content-section h2 {
+        font-size: 1.4rem; /* Increased for better readability */
+    }
+
+    .content-section p, 
+    .content-section h3,
+    .content-section li, 
+    .tennis-text p { 
+        font-size: 1.1rem; /* Increased for better readability */
+    }
+}
 
 /* Footer Styles */
 footer {
