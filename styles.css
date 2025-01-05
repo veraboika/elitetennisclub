@@ -455,7 +455,7 @@ footer {
     .hero-section {
         padding: 1rem 2rem;
     }
-    
+
     .hero-title {
         font-size: 3rem; /* Increased for better readability */
     }
@@ -580,8 +580,12 @@ footer {
         font-size: 1.2rem; /* Increased for better readability */
     }
 
-    .logo-link .logo-img {
+    .logo-link {
         width: 15px; /* Reduce logo size for mobile devices */
+    }
+
+    .logo-img {
+        width: 20px; /* Further reduce logo size for smaller mobile devices */
     }
 
     .tennis-content {
