@@ -451,6 +451,11 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    .hero-section {
+        padding: 1rem 2rem;
+    }
+    
     .hero-title {
         font-size: 3rem; /* Increased for better readability */
     }
