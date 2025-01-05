@@ -577,11 +577,11 @@ footer {
     }
 
     .logo-link .logo h1 {
-        font-size: 1.1rem; /* Increased for better readability */
+        font-size: 1.2rem; /* Increased for better readability */
     }
 
     .logo-link .logo-img {
-        width: 20px; /* Reduce logo size for mobile devices */
+        width: 23px; /* Reduce logo size for mobile devices */
     }
 
     .tennis-content {
