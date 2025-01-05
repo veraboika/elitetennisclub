@@ -581,11 +581,11 @@ footer {
     }
 
     .logo-link {
-        width: 15px; /* Reduce logo size for mobile devices */
+        width: 13px; /* Reduce logo size for mobile devices */
     }
 
     .logo-img {
-        width: 20px; /* Further reduce logo size for smaller mobile devices */
+        width: 18px; /* Further reduce logo size for smaller mobile devices */
     }
 
     .tennis-content {
