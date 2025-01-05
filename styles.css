@@ -452,16 +452,14 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
 
-    .hero-section {
-        padding: 0 3rem;
-    }
-
     .hero-title {
         font-size: 3rem; /* Increased for better readability */
+        padding: 0 1.5rem; /* Add side padding for better spacing */
     }
 
     .hero-subtitle {
         font-size: 1.4rem; /* Increased for better readability */
+        padding: 0 1.5rem; /* Add side padding for better spacing */
     }
 
     .logo-link .logo h1 {
@@ -559,10 +557,12 @@ footer {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem; /* Increased for better readability */
+        padding: 0 1.5rem; /* Add side padding for better spacing */
     }
 
     .hero-subtitle {
         font-size: 1.2rem; /* Increased for better readability */
+        padding: 0 1.5rem; /* Add side padding for better spacing */
     }
     
     .tennis-content {
