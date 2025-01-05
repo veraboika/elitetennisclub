@@ -316,6 +316,7 @@ header.shrink {
 /* Tennis Section Styles */
 .tennis-section {
     background-color: #f9f8f6; 
+    padding: 0 2rem;
 }
 
 .tennis-container {
@@ -451,7 +452,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem; /* Increased for better readability */
+        font-size: 3rem; /* Increased for better readability */
     }
 
     .hero-subtitle {
@@ -487,13 +488,8 @@ footer {
         display: flex;
     }
 
-    .about-section,
-    .content-section,
-    .tennis-section,
-    .tennis-text,
-    .hero-section {
-        padding: 1rem 2rem;
-    }
+    
+
 
     .about-text {
         font-size: 1.3rem; /* Increased for better readability */
@@ -510,11 +506,7 @@ footer {
         font-size: 1.2rem; /* Increased for better readability */
     }
 
-    .tennis-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem; /* Уменьшаем разрыв между текстом и картинкой на мобильных */
-    }
+
 
     .tennis-image,
     .tennis-text {
@@ -546,11 +538,11 @@ footer {
     }
 
     .photo-row img {
-        width: 80%; /* Adjust width as needed */
+        width: 70%; /* Adjust width as needed */
     }
 
     .about-logo {
-        width: 40px; /* Reduce about logo size for mobile devices */
+        width: 50px; /* Reduce about logo size for mobile devices */
     }
 }
 
@@ -573,6 +565,12 @@ footer {
 
     .logo-link .logo-img {
         width: 15px; /* Reduce logo size for mobile devices */
+    }
+
+    .tennis-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; /* Уменьшаем разрыв между текстом и картинкой на мобильных */
     }
 
     .about-logo {
