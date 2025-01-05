@@ -453,7 +453,7 @@ footer {
 @media (max-width: 768px) {
 
     .hero-section {
-        padding: 1rem 2rem;
+        padding: 0 3rem;
     }
 
     .hero-title {
@@ -577,15 +577,11 @@ footer {
     }
 
     .logo-link .logo h1 {
-        font-size: 1.2rem; /* Increased for better readability */
+        font-size: 1rem; /* Increased for better readability */
     }
 
-    .logo-link {
-        width: 13px; /* Reduce logo size for mobile devices */
-    }
-
-    .logo-img {
-        width: 18px; /* Further reduce logo size for smaller mobile devices */
+    .logo-link .logo-img {
+        width: 20px; /* Reduce logo size for mobile devices */
     }
 
     .tennis-content {
