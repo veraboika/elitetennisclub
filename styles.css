@@ -158,6 +158,7 @@ header.shrink {
     color: white;
     background-size: cover;
     background-position: center;
+    padding: 0 2rem;
 }
 
 .hero-title {
