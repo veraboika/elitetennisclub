@@ -1,6 +1,3 @@
-/* Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&display=swap');
-
 /* General Reset */
 * {
     margin: 0;
@@ -15,8 +12,8 @@ body {
     background-color: #f9f8f6;
 }
 
-a { 
-    text-decoration: none; 
+a {
+    text-decoration: none;
 }
 
 /* Header Styles */
@@ -27,7 +24,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: all 0.3s ease;
-    padding: 1.5rem 1.5rem; /* По умолчанию широкий хедер */
+    padding: 1.5rem 1.5rem;
 }
 
 header.shrink {
@@ -49,7 +46,7 @@ header.shrink {
 }
 
 .logo h1 {
-    font-family: 'Pinyon Script', cursive;
+    font-family: 'Pinyon Script', serif;
     font-size: 1.8rem;
 }
 
@@ -59,8 +56,8 @@ header.shrink {
 }
 
 .logo-link {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: inherit; /* Наследуем цвет текста */
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo-link .logo {
@@ -148,7 +145,7 @@ header.shrink {
     border-bottom: 2px solid #13513a;
 }
 
-/* Базовые стили для всех hero секций */
+/* Style bazowe dla wszystkich sekcji hero */
 .hero-section {
     height: 100vh;
     display: flex;
@@ -180,65 +177,66 @@ header.shrink {
     max-width: 1000px;
 }
 
-/* Стиль для главной страницы */
+/* Styl strony głównej */
 .home-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('pics/hero-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('pics/hero-background.jpg') no-repeat center center/cover;
 }
 
+/* Styl dla strony Tennis */
 .tennis-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('pics/tennis-background1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('pics/tennis-background1.jpg') no-repeat center center/cover;
 }
 
-/* Стиль для страницы History */
+/* Styl dla strony History */
 .history-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('pics/history-background1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('pics/history-background1.jpg') no-repeat center center/cover;
 }
 
-/* Стиль для страницы Rules */
+/* Styl dla strony Rules */
 .rules-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('pics/rules-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('pics/rules-background.jpg') no-repeat center center/cover;
 }
 
-/* Стиль для страницы Court Surfaces */
+/* Styl dla strony Surfaces */
 .court-surfaces-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('pics/court-surfaces-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('pics/court-surfaces-background.jpg') no-repeat center center/cover;
 }
 
-/* Стиль для страницы Physiology */
+/* Styl dla strony Physiology */
 .physiology-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('pics/physiology-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('pics/physiology-background.jpg') no-repeat center center/cover;
 }
 
-/* Стиль для страницы Equipment */
+/* Styl dla strony Equipment */
 .equipment-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('pics/equipment-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('pics/equipment-background.jpg') no-repeat center center/cover;
 }
 
-/* Стиль для страницы Tournaments */
+/* Styl dla strony Tournaments */
 .tournaments-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
-                url('pics/tournaments-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('pics/tournaments-background.jpg') no-repeat center center/cover;
 }
 
-
-.about-section { 
-    text-align: center; 
-    padding: 4rem; /* Уменьшаем нижний отступ */ 
-    background-color: #f9f8f6; 
+/* About Section Styles */
+.about-section {
+    text-align: center;
+    padding: 4rem;
+    background-color: #f9f8f6;
 }
 
 .about-logo {
     width: 80px;
     height: auto;
     margin-bottom: 1rem;
-    display: block; 
+    display: block;
     margin: 0 auto;
 }
 
@@ -269,54 +267,54 @@ header.shrink {
     height: auto;
 }
 
-/* Content Section Styles */ 
-.content-section { 
-    padding: 3rem 2rem; /* Уменьшаем верхний отступ */ 
-    background-color: #f9f8f6; 
-    text-align: left; 
+/* Content Section Styles */
+.content-section {
+    padding: 3rem 2rem;
+    background-color: #f9f8f6;
+    text-align: left;
 }
 
-.content-container { 
-    max-width: 850px; 
-    margin: 0 auto; 
-    padding: 0 2rem; 
-} 
+.content-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
-.content-section h2 { 
-    font-size: 2rem; 
-    margin-bottom: 1rem; 
-    color: #222; 
-} 
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
 
 .content-section p,
-.content-section h3 { 
-    font-size: 1.5rem; 
-    line-height: 1.6; 
-    color: #333; 
-    margin-bottom: 1rem; 
-} 
+.content-section h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
 
-.content-section ul { 
-    margin-bottom: 1rem; 
-    padding-left: 2rem; 
-} 
+.content-section ul {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
 
-.content-section li { 
-    font-size: 1.5rem; 
-    line-height: 1.6; 
-    color: #333; 
-    margin-bottom: 0.5rem; 
-} 
+.content-section li {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
 
-.content-image { 
-    width: 100%; 
-    height: auto; 
-    margin: 2rem 0; 
+.content-image {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
 }
 
 /* Tennis Section Styles */
 .tennis-section {
-    background-color: #f9f8f6; 
+    background-color: #f9f8f6;
     padding: 0 2rem;
 }
 
@@ -331,11 +329,11 @@ header.shrink {
     text-align: left;
     max-width: 1200px;
     gap: 2rem;
-    flex: 1 1 calc(33.333% - 2rem); /* Устанавливаем такую же ширину, как у .gallery-item */
+    flex: 1 1 calc(33.333% - 2rem);
     position: relative;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Чтобы текст не выходил за границы */
+    overflow: hidden;
     transition: transform 0.3s ease;
 }
 
@@ -369,7 +367,7 @@ header.shrink {
 }
 
 .tennis-content:hover .tennis-image {
-    opacity: 0.7; /* Сделать изображение прозрачным при наведении */
+    opacity: 0.7;
 }
 
 /* Gallery Section Styles */
@@ -438,37 +436,25 @@ header.shrink {
 }
 
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #222;
-    color: #f9f8f6;
-    font-size: 0.9rem;
-    margin-top: 2rem;
-}
-
-
-
 /* Responsive Design */
 @media (max-width: 768px) {
 
     .hero-title {
-        font-size: 3rem; /* Increased for better readability */
-        padding: 0 1.5rem; /* Add side padding for better spacing */
+        font-size: 3rem;
+        padding: 0 1.5rem;
     }
 
     .hero-subtitle {
-        font-size: 1.4rem; /* Increased for better readability */
-        padding: 0 1.5rem; /* Add side padding for better spacing */
+        font-size: 1.4rem;
+        padding: 0 1.5rem;
     }
 
     .logo-link .logo h1 {
-        font-size: 1.4rem; /* Increased for better readability */
+        font-size: 1.4rem;
     }
 
     .logo-link .logo-img {
-        width: 30px; /* Reduce logo size for mobile devices */
+        width: 30px;
     }
 
     .menu {
@@ -497,24 +483,24 @@ footer {
     }
 
     .about-text {
-        font-size: 1.3rem; /* Increased for better readability */
+        font-size: 1.3rem;
     }
 
     .content-section h2 {
-        font-size: 1.5rem; /* Increased for better readability */
+        font-size: 1.5rem;
     }
 
-    .content-section p, 
+    .content-section p,
     .content-section h3,
-    .content-section li, 
-    .tennis-text p { 
-        font-size: 1.2rem; /* Increased for better readability */
+    .content-section li,
+    .tennis-text p {
+        font-size: 1.2rem;
     }
 
     .tennis-content {
         flex-direction: column;
         align-items: center;
-        gap: 2rem; /* Уменьшаем разрыв между текстом и картинкой на мобильных */
+        gap: 2rem;
     }
 
     .tennis-image,
@@ -523,22 +509,21 @@ footer {
     }
 
     .gallery-item {
-        flex: 1 1 calc(50% - 2rem); 
+        flex: 1 1 calc(50% - 2rem);
     }
 
     .gallery-text p {
-        font-size: 1.3rem; /* Increased for better readability */
+        font-size: 1.3rem;
     }
 
-    /* Добавляем класс для анимации */
     .animate {
-        transform: scale(1.05); /* Анимация увеличения */
-        opacity: 0.7; /* Прозрачность, как при наведении */
+        transform: scale(1.05);
+        opacity: 0.7;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    
-    .animate .gallery-text { 
-        opacity: 1; 
+
+    .animate .gallery-text {
+        opacity: 1;
     }
 
     .photo-row {
@@ -547,29 +532,29 @@ footer {
     }
 
     .photo-row img {
-        width: 70%; /* Adjust width as needed */
+        width: 70%;
     }
 
     .about-logo {
-        width: 50px; /* Reduce about logo size for mobile devices */
+        width: 50px;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem; /* Increased for better readability */
-        padding: 0 1.5rem; /* Add side padding for better spacing */
+        font-size: 2rem;
+        padding: 0 1.5rem;
     }
 
     .hero-subtitle {
-        font-size: 1.2rem; /* Increased for better readability */
-        padding: 0 1.5rem; /* Add side padding for better spacing */
+        font-size: 1.2rem;
+        padding: 0 1.5rem;
     }
-    
+
     .tennis-content {
         flex-direction: column;
         align-items: center;
-        gap: 2rem; /* Уменьшаем разрыв между текстом и картинкой на мобильных */
+        gap: 2rem;
     }
 
     .tennis-image,
@@ -578,36 +563,36 @@ footer {
     }
 
     .logo-link .logo h1 {
-        font-size: 1.2rem; /* Increased for better readability */
+        font-size: 1.2rem;
     }
 
     .logo-link .logo-img {
-        width: 23px; /* Reduce logo size for mobile devices */
+        width: 23px;
     }
 
     .tennis-content {
         flex-direction: column;
         align-items: center;
-        gap: 2rem; /* Уменьшаем разрыв между текстом и картинкой на мобильных */
+        gap: 2rem;
     }
 
     .about-logo {
-        width: 30px; /* Further reduce about logo size for smaller mobile devices */
+        width: 30px;
     }
 
     .about-text {
-        font-size: 1.2rem; /* Increased for better readability */
+        font-size: 1.2rem;
     }
 
     .content-section h2 {
-        font-size: 1.4rem; /* Increased for better readability */
+        font-size: 1.4rem;
     }
 
-    .content-section p, 
+    .content-section p,
     .content-section h3,
-    .content-section li, 
-    .tennis-text p { 
-        font-size: 1.1rem; /* Increased for better readability */
+    .content-section li,
+    .tennis-text p {
+        font-size: 1.1rem;
     }
 }
 
@@ -619,4 +604,14 @@ footer {
     color: #f9f8f6;
     font-size: 0.9rem;
     margin-top: 2rem;
+}
+
+.footer-icons {
+    margin-top: 0.5rem;
+}
+
+.footer-icons i {
+    color: #f9f8f6;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
 }
