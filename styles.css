@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset ogólny */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-/* Header Styles */
+/* Styl nagłówka */
 header {
     position: fixed;
     width: 100%;
@@ -76,7 +76,7 @@ header.shrink {
     height: auto;
 }
 
-/* Hamburger Styles */
+/* Style hamburgera */
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -106,7 +106,7 @@ header.shrink {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobile Menu */
+/* Style menu mobilnego */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -225,7 +225,7 @@ header.shrink {
         url('pics/tournaments-background.jpg') no-repeat center center/cover;
 }
 
-/* About Section Styles */
+/* Styl sekcji informacyjnej */
 .about-section {
     text-align: center;
     padding: 4rem;
@@ -249,7 +249,7 @@ header.shrink {
     font-weight: 550;
 }
 
-/* Photo Row Styles */
+/* Style rzędów zdjęć */
 .photo-row-section {
     padding: 2rem;
     background-color: #f4f4f4;
@@ -267,7 +267,7 @@ header.shrink {
     height: auto;
 }
 
-/* Content Section Styles */
+/* Styl sekcji z treścią */
 .content-section {
     padding: 3rem 2rem;
     background-color: #f9f8f6;
@@ -312,7 +312,7 @@ header.shrink {
     margin: 2rem 0;
 }
 
-/* Tennis Section Styles */
+/* Styl sekcji tenisowej */
 .tennis-section {
     background-color: #f9f8f6;
     padding: 0 2rem;
@@ -329,7 +329,6 @@ header.shrink {
     text-align: left;
     max-width: 1200px;
     gap: 2rem;
-    flex: 1 1 calc(33.333% - 2rem);
     position: relative;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -370,7 +369,7 @@ header.shrink {
     opacity: 0.7;
 }
 
-/* Gallery Section Styles */
+/* Styl interaktywnej galerii */
 .gallery-section {
     padding: 2rem 0;
     background-color: #f9f8f6;
@@ -417,6 +416,12 @@ header.shrink {
     opacity: 0;
 }
 
+.gallery-item p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 .gallery-item:hover .gallery-text {
     opacity: 1;
 }
@@ -425,18 +430,31 @@ header.shrink {
     opacity: 0.7;
 }
 
-.gallery-item p {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
 .gallery-item:hover {
     transform: scale(1.05);
 }
 
+/* Styl stopki */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #13513a;
+    color: #f9f8f6;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
 
-/* Responsive Design */
+.footer-icons {
+    margin-top: 0.5rem;
+}
+
+.footer-icons i {
+    color: #f9f8f6;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Responsywny design */
 @media (max-width: 768px) {
 
     .hero-title {
@@ -455,23 +473,6 @@ header.shrink {
 
     .logo-link .logo-img {
         width: 30px;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 1rem;
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 100;
-    }
-
-    .menu.active {
-        display: flex;
     }
 
     .hamburger {
@@ -543,23 +544,10 @@ header.shrink {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
-        padding: 0 1.5rem;
     }
 
     .hero-subtitle {
         font-size: 1.2rem;
-        padding: 0 1.5rem;
-    }
-
-    .tennis-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .tennis-image,
-    .tennis-text {
-        width: 100%;
     }
 
     .logo-link .logo h1 {
@@ -570,14 +558,8 @@ header.shrink {
         width: 23px;
     }
 
-    .tennis-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
     .about-logo {
-        width: 30px;
+        width: 40px;
     }
 
     .about-text {
@@ -594,24 +576,4 @@ header.shrink {
     .tennis-text p {
         font-size: 1.1rem;
     }
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #222;
-    color: #f9f8f6;
-    font-size: 0.9rem;
-    margin-top: 2rem;
-}
-
-.footer-icons {
-    margin-top: 0.5rem;
-}
-
-.footer-icons i {
-    color: #f9f8f6;
-    margin: 0 0.5rem;
-    font-size: 1.2rem;
 }

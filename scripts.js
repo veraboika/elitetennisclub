@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Gallery item animation
+    // Animacja elementów galerii
     const items = document.querySelectorAll('.gallery-item');
 
     const observer = new IntersectionObserver((entries) => {
@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }, {
-        threshold: 0.5 // Element must be 50% visible
+        threshold: 0.5 // Element musi być widoczny w 50%
     });
 
     items.forEach(item => {
         observer.observe(item);
     });
 
-    // Shrinking header on scroll
+    // Zmniejszanie nagłówka podczas przewijania
     document.addEventListener("scroll", () => {
         const header = document.getElementById("main-header");
         if (header) {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Mobile menu toggle
+    // Przełączanie menu mobilnego
     const menuToggle = document.getElementById("menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    // Data for men's height distribution
+    // Dane dotyczące rozkładu wzrostu mężczyzn
     const menData = {
         labels: ['175-180 cm', '181-185 cm', '186-190 cm', '191-195 cm', '196-200 cm'],
         datasets: [{
@@ -62,32 +62,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }]
     };
 
-    // Data for women's height distribution
+    // Dane dotyczące rozkładu wzrostu kobiet
     const womenData = {
         labels: ['165-170 cm', '171-175 cm', '176-180 cm', '181-185 cm', '186-190 cm'],
         datasets: [{
             label: "Women's Tennis World No. 1 Height Distribution",
             data: [9, 5, 7, 5, 3],
             backgroundColor: [
-                'rgba(34, 139, 34, 0.5)',  // Forest Green (с приглушенной прозрачностью)
-                'rgba(0, 100, 0, 0.5)',    // Dark Green
-                'rgba(46, 139, 87, 0.5)',  // Sea Green
-                'rgba(0, 128, 0, 0.5)',    // Green
-                'rgba(85, 107, 47, 0.5)'   // Dark Olive Green
+                'rgba(34, 139, 34, 0.5)',  
+                'rgba(0, 100, 0, 0.5)',    
+                'rgba(46, 139, 87, 0.5)',  
+                'rgba(0, 128, 0, 0.5)',    
+                'rgba(85, 107, 47, 0.5)'   
             ],
             borderColor: [
-                'rgba(34, 139, 34, 1)',    // Forest Green
-                'rgba(0, 100, 0, 1)',      // Dark Green
-                'rgba(46, 139, 87, 1)',    // Sea Green
-                'rgba(0, 128, 0, 1)',      // Green
-                'rgba(85, 107, 47, 1)'     // Dark Olive Green
+                'rgba(34, 139, 34, 1)',   
+                'rgba(0, 100, 0, 1)',     
+                'rgba(46, 139, 87, 1)',   
+                'rgba(0, 128, 0, 1)',      
+                'rgba(85, 107, 47, 1)'    
             ],
 
             borderWidth: 1
         }]
     };
 
-    // Configuration for men's chart
+    // Konfiguracja wykresu dla mężczyzn
     const menConfig = {
         type: 'bar',
         data: menData,
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Configuration for women's chart
+    // Konfiguracja wykresu dla kobiet
     const womenConfig = {
         type: 'bar',
         data: womenData,
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Rendering the charts
+    // Renderowanie wykresów
     window.onload = function () {
         const canvaM = document.getElementById('menHeightChart');
 
