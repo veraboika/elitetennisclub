@@ -56,24 +56,7 @@ header.shrink {
 }
 
 .logo-link {
-    text-decoration: none;
     color: inherit;
-}
-
-.logo-link .logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo-link .logo h1 {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 1.8rem;
-}
-
-.logo-link .logo-img {
-    width: 40px;
-    height: auto;
 }
 
 /* Style hamburgera */
@@ -135,7 +118,6 @@ header.shrink {
 }
 
 .menu-link {
-    text-decoration: none;
     color: #13513a;
     font-size: 1.2rem;
     font-weight: bold;
@@ -451,7 +433,7 @@ footer {
 .footer-icons i {
     color: #f9f8f6;
     margin: 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Responsywny design */
@@ -483,7 +465,8 @@ footer {
         padding: 1rem 2rem;
     }
 
-    .about-text {
+    .about-text,
+    .gallery-text p {
         font-size: 1.3rem;
     }
 
@@ -511,10 +494,6 @@ footer {
 
     .gallery-item {
         flex: 1 1 calc(50% - 2rem);
-    }
-
-    .gallery-text p {
-        font-size: 1.3rem;
     }
 
     .animate {
@@ -546,11 +525,10 @@ footer {
         font-size: 2rem;
     }
 
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .logo-link .logo h1 {
+    .hero-subtitle,
+    .logo-link .logo h1,
+    .about-text,
+    .gallery-text p {
         font-size: 1.2rem;
     }
 
@@ -560,10 +538,6 @@ footer {
 
     .about-logo {
         width: 40px;
-    }
-
-    .about-text {
-        font-size: 1.2rem;
     }
 
     .content-section h2 {
