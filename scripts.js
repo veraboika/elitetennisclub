@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menData = {
         labels: ['175-180 cm', '181-185 cm', '186-190 cm', '191-195 cm', '196-200 cm'],
         datasets: [{
-            label: "Men's Tennis World No. 1 Height Distribution",
+            label: "No. 1 Height Distribution ATP",
             data: [7, 10, 7, 4, 1],
             backgroundColor: [
                 'rgba(0, 51, 102, 0.5)',
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const womenData = {
         labels: ['165-170 cm', '171-175 cm', '176-180 cm', '181-185 cm', '186-190 cm'],
         datasets: [{
-            label: "Women's Tennis World No. 1 Height Distribution",
+            label: "No. 1 Height Distribution WTA",
             data: [9, 5, 7, 5, 3],
             backgroundColor: [
                 'rgba(34, 139, 34, 0.5)',  
